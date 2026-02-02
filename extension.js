@@ -293,7 +293,7 @@ class Kimpanel extends GObject.Object {
         this.menu.actor.hide();
         Main.layoutManager.addChrome(this.inputpanel.panel, {});
         Main.uiGroup.add_child(this.inputpanel._cursor);
-        Main.panel.addToStatusArea('kimpanel', this.indicator);
+        Main.panel.addToStatusArea('kimpanel', this.indicator, 1, 'right');
     }
 
     updateInputPanel() {

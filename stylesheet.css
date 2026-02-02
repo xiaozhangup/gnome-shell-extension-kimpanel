@@ -1,36 +1,36 @@
 .popup-menu-boxpointer.kimpanel-popup-boxpointer {
-  /* you may customize pointer box here */
+  border-radius: 16px;
 }
 
 .popup-menu-content.kimpanel-popup-content {
-  /* you may customize pointer box here */
-  /* padding: 6px; */
+  border-radius: 16px;
 }
 
 .kimpanel-label {
-  font-family:sans;
-  font-weight:normal;
+  font-family: sans;
+  font-weight: normal;
   padding: 0.4em;
 }
 
 .kimpanel-candidate-item {
   cursor: pointer;
-  transition-duration: 0ms;
+  margin: 1px;
+  transition-duration: 80ms;
 }
 
 .kimpanel-candidate-item:hover {
-  /* border-radius: 14px; */
-  /* background-color: rgba(200,200,200,0.33); */
+  border-radius: 8px;
+  background-color: rgba(200,200,200,0.33);
 }
 
 .kimpanel-candidate-item:active {
-  /* border-radius: 14px; */
-  /* background-color: rgba(200,200,200,0.33); */
+  border-radius: 8px;
+  background-color: -st-accent-color;
 }
 
 .kimpanel-candidate-item:active:hover {
-  /* border-radius: 14px; */
-  /* background-color: rgba(200,200,200,0.15); */
+  border-radius: 8px;
+  background-color: st-lighten(-st-accent-color, 6%);
 }
 
 .minwidth-zero {
@@ -39,4 +39,18 @@
 
 .icon-disable {
   color:rgba(150,150,150,0.5);
+}
+
+.popup-menu-boxpointer.kimpanel-popup-boxpointer.kimpanel-aux-only {
+  border-radius: 10px;
+}
+
+.kimpanel-aux-only .popup-menu-content.kimpanel-popup-content {
+  border-radius: 10px;
+  padding: 3px 4px;
+}
+
+.kimpanel-aux-only .kimpanel-label {
+  font-size: 0.92em;
+  padding: 0.15em 0.3em;
 }

@@ -263,6 +263,13 @@ export class InputPanel extends GObject.Object {
 
         this.panel._arrowSide = this._arrowSide;
 
+        // Only style the IM-switch popup (aux-only).
+        // This avoids affecting preedit/lookup table UI.
+        if (kimpanel.showAux && !kimpanel.showPreedit && !kimpanel.showLookupTable)
+            this.panel.add_style_class_name('kimpanel-aux-only');
+        else
+            this.panel.remove_style_class_name('kimpanel-aux-only');
+
         this.visible = kimpanel.showAux || kimpanel.showPreedit ||
                        kimpanel.showLookupTable;
         if (this.visible) {
